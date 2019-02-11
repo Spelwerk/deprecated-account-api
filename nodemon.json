@@ -1,0 +1,8 @@
+{
+  "ignoreRoot": [
+    "node_modules/",
+    "installation/",
+    "logs/",
+    "tests/"
+  ]
+}

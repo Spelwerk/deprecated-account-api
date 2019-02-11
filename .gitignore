@@ -1,0 +1,15 @@
+## GLOBAL
+/.idea
+/node_modules
+
+## LOGS
+/logs
+
+# TESTING
+/coverage
+/tests/secret
+
+# MISC
+.DS_Store
+.env*
+npm-debug.log*

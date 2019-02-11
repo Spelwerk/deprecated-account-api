@@ -1,0 +1,22 @@
+server:
+  host: 0.0.0.0
+  port: 8080
+
+database:
+  host: localhost
+  name: saga_v1
+  user:
+  pass:
+
+secret:
+  jwt:
+  aes:
+  sha:
+
+mailgun:
+  key:
+  dom: mg.spelwerk.se
+
+admin:
+  mail: admin@spelwerk.com
+  pass:

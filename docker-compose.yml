@@ -1,0 +1,24 @@
+version: "3.3"
+services:
+  spelwerk-api-account:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - SSH_PRIVATE_KEY=${SSH_PRIVATE_KEY}
+      environment:
+        - NODE_ENV=development
+        - LOG_LEVEL=debug
+        - DATABASE_HOST=localhost
+        - DATABASE_NAME=saga_v1
+        - DATABASE_USER=spelwerk
+        - DATABASE_PASS=spelwerk
+        - JWT_SECRET=jwt
+        - AES_SECRET=aes
+        - SHA_SECRET=sha
+        - MAILGUN_KEY=
+        - MAILGUN_DOM=mg.spelwerk.se
+        - ADMIN_MAIL=admin@spelwerk.com
+        - ADMIN_PASS=password
+    volumes:
+      - .:/app
